@@ -32,6 +32,7 @@ señal.place(x=20, y=15)
 combo = ttk.Combobox(datos, state="readonly", values=["SINUSOIDAL","CUADRADA","DIENTE DE SIERRA"], font=('Comic Sans Ms', 12), width=20, height=25)
 combo.place(x=20, y=40)
 
+# Validar la amplitud ingresada. 
 def valida_amp(a_str):
     if a_str.isdigit():
         return True
@@ -46,6 +47,7 @@ amp.place(x=270, y=40)
 combo1 = ttk.Combobox(datos, state="readonly", values=["V"], font=('Comic Sans Ms', 12), width=5, height=25)
 combo1.place(x=380, y=40)
 
+# Validar la frecuencia ingresada.
 def valida_fre(frecuencia_str):
     if frecuencia_str.isdigit():
         return True
